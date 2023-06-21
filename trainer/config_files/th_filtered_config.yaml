@@ -1,14 +1,14 @@
 number: '๐๑๒๓๔๕๖๗๘๙'
-symbol: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ €"
-lang_char: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+symbol: '๐๑๒๓๔๕๖๗๘๙'
+lang_char: '๐๑๒๓๔๕๖๗๘๙'
 experiment_name: 'th_filtered'
 train_data: 'all_data'
 valid_data: 'all_data/th_val'
 manualSeed: 1111
 workers: 6
 batch_size: 32 #32
-num_iter: 5000
-valInterval: 20000
+num_iter: 100
+valInterval: 50
 saved_model: '' #'saved_models/en_filtered/iter_300000.pth'
 FT: False
 optim: False # default is Adadelta
@@ -19,13 +19,13 @@ eps: 0.00000001
 grad_clip: 5
 #Data processing
 select_data: 'th_train_filtered' # this is dataset folder in train_data
-batch_ratio: '1' 
+batch_ratio: '1.0' 
 total_data_usage_ratio: 1.0
 batch_max_length: 34 
 imgH: 64
 imgW: 600
 rgb: False
-contrast_adjust: False
+contrast_adjust: 0.0
 sensitive: True
 PAD: True
 contrast_adjust: 0.0
